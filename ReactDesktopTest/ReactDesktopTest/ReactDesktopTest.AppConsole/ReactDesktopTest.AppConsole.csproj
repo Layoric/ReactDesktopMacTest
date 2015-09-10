@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F15714AB-0F7A-4D53-8BB7-5BA0CB198E06}</ProjectGuid>
+    <ProjectGuid>{4C9AF7AA-C3A4-42F9-AFC5-7B785884AE18}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReactDesktopTest.AppConsole</RootNamespace>

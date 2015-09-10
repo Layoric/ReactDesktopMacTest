@@ -21,7 +21,7 @@ namespace ReactDesktopTest.AppMac
 		/// Base constructor requires a name and assembly to locate web service classes. 
 		/// </summary>
 		public AppHost()
-			: base("ReactDesktopTest.AppMac.AppMac", typeof(MyServices).Assembly)
+			: base("ReactDesktopTest.AppMac", typeof(MyServices).Assembly)
 		{
 
 		}
