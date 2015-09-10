@@ -93,7 +93,7 @@ namespace ReactDesktopTest.AppMac
 			//Invoke native about menu item programmatically.
 			MainClass.MainMenu.InvokeOnMainThread (() => {
 				foreach (var item in MainClass.MainMenu.ItemArray()) {
-					if (item.Title == "ReactDesktopTest.AppMac") {
+					if (item.Title == "ReactDesktopTest") {
 						item.Submenu.PerformActionForItem(0);
 					}
 				}

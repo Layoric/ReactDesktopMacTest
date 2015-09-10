@@ -103,12 +103,12 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\ReactDesktopTest\ReactDesktopTest.ServiceInterface\ReactDesktopTest.ServiceInterface.csproj">
-      <Project>{582DFB0F-F84D-4E43-9BCA-2A5A86600B7A}</Project>
+    <ProjectReference Include="..\ReactDesktopTest.ServiceInterface\ReactDesktopTest.ServiceInterface.csproj">
+      <Project>{512020D2-D300-4DFD-A8D6-12BF2B7192F3}</Project>
       <Name>ReactDesktopTest.ServiceInterface</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ReactDesktopTest\ReactDesktopTest.ServiceModel\ReactDesktopTest.ServiceModel.csproj">
-      <Project>{08BEF328-AB7D-48D3-800D-48ACC75C7914}</Project>
+    <ProjectReference Include="..\ReactDesktopTest.ServiceModel\ReactDesktopTest.ServiceModel.csproj">
+      <Project>{777DBC65-E11B-4D42-8D7B-103AF8A9F034}</Project>
       <Name>ReactDesktopTest.ServiceModel</Name>
     </ProjectReference>
   </ItemGroup>
