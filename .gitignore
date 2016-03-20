@@ -160,6 +160,9 @@ ClientBin/
 *.publishsettings
 node_modules/
 jspm_packages/
+staging-winforms/
+staging-console/
+apps/
 
 # RIA/Silverlight projects
 Generated_Code/
