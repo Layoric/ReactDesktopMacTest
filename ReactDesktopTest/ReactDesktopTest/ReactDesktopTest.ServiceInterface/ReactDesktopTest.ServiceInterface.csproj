@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{ED37EA2C-54BD-4F27-87AB-D0951734FB65}</ProjectGuid>
+    <ProjectGuid>{13BE5E32-F14F-468A-931C-428D160C6905}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReactDesktopTest.ServiceInterface</RootNamespace>
