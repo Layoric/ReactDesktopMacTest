@@ -164,6 +164,7 @@ staging-winforms/
 staging-console/
 apps/
 typings/
+wwwroot/
 
 # RIA/Silverlight projects
 Generated_Code/
