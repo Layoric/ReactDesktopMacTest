@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\..\packages\CefSharp.WinForms.45.0.0\build\CefSharp.WinForms.props" Condition="Exists('..\..\packages\CefSharp.WinForms.45.0.0\build\CefSharp.WinForms.props')" />
-  <Import Project="..\..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.props" Condition="Exists('..\..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.props')" />
+  <Import Project="..\..\packages\CefSharp.WinForms.47.0.3\build\CefSharp.WinForms.props" Condition="Exists('..\..\packages\CefSharp.WinForms.47.0.3\build\CefSharp.WinForms.props')" />
+  <Import Project="..\..\packages\CefSharp.Common.47.0.3\build\CefSharp.Common.props" Condition="Exists('..\..\packages\CefSharp.Common.47.0.3\build\CefSharp.Common.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <PlatformTarget>x86</PlatformTarget>
-    <ProjectGuid>{8FCA0C3C-2BB7-4E56-BA23-C5B8E02FF111}</ProjectGuid>
+    <ProjectGuid>{26A399F2-6B78-4947-85DE-77FB790FBEDA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReactDesktopTest.AppWinForms</RootNamespace>
@@ -127,7 +127,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="packages.config" />
-    <None Include="tsconfig.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -162,23 +161,20 @@
   <ItemGroup>
     <Content Include="logo.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <TypeScriptCompile Include="platform.ts" />
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
-    <Error Condition="!Exists('..\..\packages\cef.redist.x64.3.2454.1344\build\cef.redist.x64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\cef.redist.x64.3.2454.1344\build\cef.redist.x64.targets'))" />
-    <Error Condition="!Exists('..\..\packages\cef.redist.x86.3.2454.1344\build\cef.redist.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\cef.redist.x86.3.2454.1344\build\cef.redist.x86.targets'))" />
-    <Error Condition="!Exists('..\..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.props'))" />
-    <Error Condition="!Exists('..\..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.targets'))" />
-    <Error Condition="!Exists('..\..\packages\CefSharp.WinForms.45.0.0\build\CefSharp.WinForms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\CefSharp.WinForms.45.0.0\build\CefSharp.WinForms.props'))" />
+    <Error Condition="!Exists('..\..\packages\cef.redist.x64.3.2526.1362\build\cef.redist.x64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\cef.redist.x64.3.2526.1362\build\cef.redist.x64.targets'))" />
+    <Error Condition="!Exists('..\..\packages\cef.redist.x86.3.2526.1362\build\cef.redist.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\cef.redist.x86.3.2526.1362\build\cef.redist.x86.targets'))" />
+    <Error Condition="!Exists('..\..\packages\CefSharp.Common.47.0.3\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\CefSharp.Common.47.0.3\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('..\..\packages\CefSharp.Common.47.0.3\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\CefSharp.Common.47.0.3\build\CefSharp.Common.targets'))" />
+    <Error Condition="!Exists('..\..\packages\CefSharp.WinForms.47.0.3\build\CefSharp.WinForms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\CefSharp.WinForms.47.0.3\build\CefSharp.WinForms.props'))" />
   </Target>
-  <Import Project="..\..\packages\cef.redist.x64.3.2454.1344\build\cef.redist.x64.targets" Condition="Exists('..\..\packages\cef.redist.x64.3.2454.1344\build\cef.redist.x64.targets')" />
-  <Import Project="..\..\packages\cef.redist.x86.3.2454.1344\build\cef.redist.x86.targets" Condition="Exists('..\..\packages\cef.redist.x86.3.2454.1344\build\cef.redist.x86.targets')" />
-  <Import Project="..\..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.targets" Condition="Exists('..\..\packages\CefSharp.Common.45.0.0\build\CefSharp.Common.targets')" />
+  <Import Project="..\..\packages\cef.redist.x64.3.2526.1362\build\cef.redist.x64.targets" Condition="Exists('..\..\packages\cef.redist.x64.3.2526.1362\build\cef.redist.x64.targets')" />
+  <Import Project="..\..\packages\cef.redist.x86.3.2526.1362\build\cef.redist.x86.targets" Condition="Exists('..\..\packages\cef.redist.x86.3.2526.1362\build\cef.redist.x86.targets')" />
+  <Import Project="..\..\packages\CefSharp.Common.47.0.3\build\CefSharp.Common.targets" Condition="Exists('..\..\packages\CefSharp.Common.47.0.3\build\CefSharp.Common.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

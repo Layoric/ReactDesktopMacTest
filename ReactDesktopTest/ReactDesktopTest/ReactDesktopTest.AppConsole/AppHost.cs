@@ -69,7 +69,11 @@ namespace ReactDesktopTest.AppConsole
     {
         public void Quit()
         {
-            Environment.Exit(0);
+            ThreadPool.QueueUserWorkItem(_ =>
+            {
+                Thread.Sleep(10);    // Allow /nativehost/quit to return gracefully
+                Environment.Exit(0);
+            });
         }
     }
 }
