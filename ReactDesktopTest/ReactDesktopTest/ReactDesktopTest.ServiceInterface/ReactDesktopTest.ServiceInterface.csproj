@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4AB27644-C225-4E4D-A779-0F3BB97C95BC}</ProjectGuid>
+    <ProjectGuid>{B7D4B767-4748-4A01-A97D-CB9646D06ABC}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReactDesktopTest.ServiceInterface</RootNamespace>
@@ -80,7 +80,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReactDesktopTest.ServiceModel\ReactDesktopTest.ServiceModel.csproj">
-      <Project>{08bef328-ab7d-48d3-800d-48acc75c7914}</Project>
+      <Project>{9870c480-c599-465a-b418-4bbdf1301fe1}</Project>
       <Name>ReactDesktopTest.ServiceModel</Name>
     </ProjectReference>
   </ItemGroup>

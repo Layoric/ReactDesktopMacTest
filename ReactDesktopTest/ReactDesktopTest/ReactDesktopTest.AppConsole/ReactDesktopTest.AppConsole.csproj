@@ -5,7 +5,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{933C86FE-B31B-489E-9200-C4BEF1A5CE69}</ProjectGuid>
+    <ProjectGuid>{6E2DFD71-07FA-4853-A2FE-5D04BBD61909}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReactDesktopTest.AppConsole</RootNamespace>
@@ -90,15 +90,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReactDesktopTest.Resources\ReactDesktopTest.Resources.csproj">
-      <Project>{3414e9ec-19b8-410c-ac33-f2e6d081b930}</Project>
+      <Project>{81b27917-d42f-4735-91a1-86d84fe6b0cd}</Project>
       <Name>ReactDesktopTest.Resources</Name>
     </ProjectReference>
     <ProjectReference Include="..\ReactDesktopTest.ServiceInterface\ReactDesktopTest.ServiceInterface.csproj">
-      <Project>{582dfb0f-f84d-4e43-9bca-2a5a86600b7a}</Project>
+      <Project>{42bacef2-468e-4426-9022-f61ce7001600}</Project>
       <Name>ReactDesktopTest.ServiceInterface</Name>
     </ProjectReference>
     <ProjectReference Include="..\ReactDesktopTest.ServiceModel\ReactDesktopTest.ServiceModel.csproj">
-      <Project>{08bef328-ab7d-48d3-800d-48acc75c7914}</Project>
+      <Project>{b644ab83-0d89-4841-9ed3-d9c3953637d5}</Project>
       <Name>ReactDesktopTest.ServiceModel</Name>
     </ProjectReference>
   </ItemGroup>
