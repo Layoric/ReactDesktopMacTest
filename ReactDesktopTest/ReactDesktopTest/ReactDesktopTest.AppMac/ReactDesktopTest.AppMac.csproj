@@ -4,9 +4,10 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{9b261442-82f9-4ebc-924f-bd72d4ede2e8}</ProjectGuid>
+    <ProjectGuid>{319ff176-e7fc-4cf8-87f2-45c06be3ee79}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ReactDesktopTest.AppMac</RootNamespace>
+    <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>
     <AssemblyName>ReactDesktopTest.AppMac</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <TargetFrameworkIdentifier>Xamarin.Mac</TargetFrameworkIdentifier>
