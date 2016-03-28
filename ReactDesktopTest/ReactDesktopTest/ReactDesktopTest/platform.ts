@@ -1,11 +1,10 @@
-﻿document.documentElement.className += ' web';
-interface Window {
+﻿interface Window {
     nativeHost: any;
 }
 
 class WebNativeHost {
     showAbout() {
-        alert("ReactDesktopTest - ServiceStack + ReactJS");
+        alert("ReactDesktopTest - ServiceStack + React");
     }
 
     toggleFormBorder() {}

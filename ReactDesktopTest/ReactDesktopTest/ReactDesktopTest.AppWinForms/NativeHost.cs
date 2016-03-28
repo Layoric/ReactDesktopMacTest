@@ -32,7 +32,7 @@ namespace ReactDesktopTest.AppWinForms
 
         public void ShowAbout()
         {
-            MessageBox.Show(@"ServiceStack with CefSharp + ReactJS", @"ReactDesktopTest.AppWinForms", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(@"ServiceStack Winforms with CefSharp + React", @"ReactDesktopTest.AppWinForms", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         public void ToggleFormBorder()

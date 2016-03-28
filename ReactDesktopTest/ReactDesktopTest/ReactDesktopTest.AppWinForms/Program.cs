@@ -21,6 +21,7 @@ namespace ReactDesktopTest.AppWinForms
         [STAThread]
         static void Main()
         {
+            Cef.EnableHighDPISupport();
             Cef.Initialize(new CefSettings());
 
             Application.EnableVisualStyles();

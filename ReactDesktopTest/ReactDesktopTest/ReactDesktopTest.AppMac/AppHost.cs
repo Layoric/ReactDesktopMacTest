@@ -74,6 +74,7 @@ namespace ReactDesktopTest.AppMac
 				foreach (var item in Program.MainMenu.ItemArray()) {
 					if (item.Title == "ReactDesktopTest") {
 						item.Submenu.PerformActionForItem(0);
+                        return;
 					}
 				}
 			});
@@ -81,13 +82,9 @@ namespace ReactDesktopTest.AppMac
 
 		public void Quit()
 		{
-			AppDelegate.MainWindowController.InvokeOnMainThread (() => {
-				AppDelegate.MainWindowController.Hide();
-			});
-			
-			Environment.Exit(0);
-			
-			AppDelegate.MainWindowController.Window.PerformClose (this);
+            Program.MainMenu.InvokeOnMainThread (() => {
+                NSApplication.SharedApplication.Terminate(NSApplication.SharedApplication);
+            });
 		}
 	}
 }

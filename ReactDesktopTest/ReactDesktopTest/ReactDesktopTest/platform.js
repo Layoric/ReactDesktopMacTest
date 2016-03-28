@@ -1,9 +1,9 @@
-document.documentElement.className += ' web';
+﻿document.documentElement.className += ' web';
 var WebNativeHost = (function () {
     function WebNativeHost() {
     }
     WebNativeHost.prototype.showAbout = function () {
-        alert("ReactDesktopTest - ServiceStack + ReactJS");
+        alert("ReactDesktopTest - ServiceStack + React");
     };
     WebNativeHost.prototype.toggleFormBorder = function () { };
     WebNativeHost.prototype.quit = function () {
