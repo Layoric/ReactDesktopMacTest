@@ -8,7 +8,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <PlatformTarget>x86</PlatformTarget>
-    <ProjectGuid>{784BE505-178A-46F8-8DF5-34D37ED31739}</ProjectGuid>
+    <ProjectGuid>{1D244DF0-C3DF-4E5A-85D3-F59B55A1C8B8}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReactDesktopTest.AppWinForms</RootNamespace>
