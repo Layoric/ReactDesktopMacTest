@@ -8,7 +8,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{BF838087-A810-4FB2-A4CF-D119494A1E11}</ProjectGuid>
+    <ProjectGuid>{DC3E3ED0-BAAC-4E86-9853-5A14DB1A6C14}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -156,7 +156,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReactDesktopTest.ServiceInterface\ReactDesktopTest.ServiceInterface.csproj">
-      <Project>{3b447e06-25e4-4535-89c1-3c5982765d10}</Project>
+      <Project>{582dfb0f-f84d-4e43-9bca-2a5a86600b7a}</Project>
       <Name>ReactDesktopTest.ServiceInterface</Name>
     </ProjectReference>
     <ProjectReference Include="..\ReactDesktopTest.ServiceModel\ReactDesktopTest.ServiceModel.csproj">
@@ -190,9 +190,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>24109</DevelopmentServerPort>
+          <DevelopmentServerPort>31459</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:24109/</IISUrl>
+          <IISUrl>http://localhost:31459/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

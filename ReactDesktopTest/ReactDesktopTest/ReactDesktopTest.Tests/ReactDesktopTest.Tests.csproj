@@ -71,11 +71,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReactDesktopTest.ServiceInterface\ReactDesktopTest.ServiceInterface.csproj">
-      <Project>{e0b7a720-4cc1-4167-a265-32fc1f53db5d}</Project>
+      <Project>{582dfb0f-f84d-4e43-9bca-2a5a86600b7a}</Project>
       <Name>ReactDesktopTest.ServiceInterface</Name>
     </ProjectReference>
     <ProjectReference Include="..\ReactDesktopTest.ServiceModel\ReactDesktopTest.ServiceModel.csproj">
-      <Project>{d72c617d-d291-49ea-8caf-3caea1d066c9}</Project>
+      <Project>{08bef328-ab7d-48d3-800d-48acc75c7914}</Project>
       <Name>ReactDesktopTest.ServiceModel</Name>
     </ProjectReference>
   </ItemGroup>

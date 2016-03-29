@@ -8,7 +8,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <PlatformTarget>x86</PlatformTarget>
-    <ProjectGuid>{2DA6DAD6-A594-4995-B964-F57138349350}</ProjectGuid>
+    <ProjectGuid>{784BE505-178A-46F8-8DF5-34D37ED31739}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ReactDesktopTest.AppWinForms</RootNamespace>
@@ -125,15 +125,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ReactDesktopTest.Resources\ReactDesktopTest.Resources.csproj">
-      <Project>{013ba5d3-b74e-42ca-a051-ec0f21fdda8b}</Project>
+      <Project>{3414e9ec-19b8-410c-ac33-f2e6d081b930}</Project>
       <Name>ReactDesktopTest.Resources</Name>
     </ProjectReference>
     <ProjectReference Include="..\ReactDesktopTest.ServiceInterface\ReactDesktopTest.ServiceInterface.csproj">
-      <Project>{c2a7f44e-1592-4376-9852-10f0afa2bc74}</Project>
+      <Project>{582dfb0f-f84d-4e43-9bca-2a5a86600b7a}</Project>
       <Name>ReactDesktopTest.ServiceInterface</Name>
     </ProjectReference>
     <ProjectReference Include="..\ReactDesktopTest.ServiceModel\ReactDesktopTest.ServiceModel.csproj">
-      <Project>{c34616ea-63b3-4cc7-a95b-b7bf557656b1}</Project>
+      <Project>{08bef328-ab7d-48d3-800d-48acc75c7914}</Project>
       <Name>ReactDesktopTest.ServiceModel</Name>
     </ProjectReference>
   </ItemGroup>
