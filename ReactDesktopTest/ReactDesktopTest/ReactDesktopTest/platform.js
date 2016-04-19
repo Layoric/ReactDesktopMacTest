@@ -1,4 +1,3 @@
-﻿document.documentElement.className += ' web';
 var WebNativeHost = (function () {
     function WebNativeHost() {
     }
@@ -11,5 +10,6 @@ var WebNativeHost = (function () {
     };
     WebNativeHost.prototype.ready = function () { };
     return WebNativeHost;
-})();
+}());
 window.nativeHost = window.nativeHost || new WebNativeHost();
+//# sourceMappingURL=platform.js.map

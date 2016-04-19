@@ -1,6 +1,11 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Diagnostics;
+using System.IO;
+using System.Windows.Forms;
 using CefSharp;
 using CefSharp.WinForms.Internals;
+using ServiceStack.Configuration;
+using Squirrel;
 
 namespace ReactDesktopTest.AppWinForms
 {
@@ -47,9 +52,52 @@ namespace ReactDesktopTest.AppWinForms
 
         public void Ready()
         {
-            formMain.InvokeOnUiThreadIfRequired(() =>
+            //Invoke on DOM ready
+            var appSettings = new AppSettings();
+            var checkForUpdates = appSettings.Get<bool>("EnableAutoUpdate");
+            if (!checkForUpdates)
+                return;
+
+            var releaseFolderUrl = appSettings.GetString("UpdateManagerUrl");
+            try
             {
-                //Invoke on DOM ready
+                var updatesAvailableTask = AppUpdater.CheckForUpdates(releaseFolderUrl);
+                updatesAvailableTask.ContinueWith(isAvailable =>
+                {
+                    isAvailable.Wait(TimeSpan.FromMinutes(1));
+                    bool updatesAvailable = isAvailable.Result;
+                    //Only check once one launch then release UpdateManager.
+                    if (!updatesAvailable)
+                    {
+                        AppUpdater.Dispose();
+                        return;
+                    }
+                    if (formMain == null)
+                    {
+                        return;
+                    }
+                    // Notify web client updates are available.
+                    formMain.InvokeOnUiThreadIfRequired(() =>
+                    {
+                        formMain.ChromiumBrowser.GetMainFrame().ExecuteJavaScriptAsync("window.updateAvailable();");
+                    });
+                });
+            }
+            catch (Exception e)
+            {
+                // Error reaching update server
+            }
+        }
+
+        public void PerformUpdate()
+        {
+            AppUpdater.ApplyUpdates(new AppSettings().GetString("UpdateManagerUrl")).ContinueWith(t =>
+            {
+                formMain.InvokeOnUiThreadIfRequired(() =>
+                {
+                    formMain.Close();
+                });
+                UpdateManager.RestartApp();
             });
         }
     }

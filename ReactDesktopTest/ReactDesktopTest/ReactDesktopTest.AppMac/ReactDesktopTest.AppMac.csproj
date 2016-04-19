@@ -4,7 +4,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <ProjectGuid>{537718c5-a27f-482a-8e85-77f7d1303a42}</ProjectGuid>
+    <ProjectGuid>{310bd836-2010-4f9e-bd2f-857d949827e4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>ReactDesktopTest.AppMac</RootNamespace>
     <MonoMacResourcePrefix>Resources</MonoMacResourcePrefix>

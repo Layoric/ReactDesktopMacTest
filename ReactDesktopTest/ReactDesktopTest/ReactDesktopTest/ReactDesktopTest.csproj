@@ -8,7 +8,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{E055B50C-325E-4EE2-B003-BBDEDDEA395A}</ProjectGuid>
+    <ProjectGuid>{DB421C2D-612D-4C7B-B49C-A933F16D94A6}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -115,7 +115,6 @@
     <Content Include="platform.js" />
     <Content Include="deps.lib.js" />
     <Content Include="img\react-logo.png" />
-    <Content Include="Scripts\_references.js" />
     <Content Include="tests\unit\hello-test.js" />
     <Content Include="tests\preprocessor.js" />
     <Content Include="tests\README.txt" />
@@ -128,8 +127,6 @@
     <Content Include="wwwroot_build\00-install-dependencies.bat" />
     <Content Include="wwwroot_build\package-deploy-console.bat" />
     <Content Include="wwwroot_build\build.bat" />
-    <Content Include="wwwroot_build\config-winforms.txt" />
-    <Content Include="wwwroot_build\package-deploy-winforms.bat" />
     <Content Include="wwwroot_build\deploy\appsettings.txt" />
     <Content Include="wwwroot_build\publish\config.json" />
     <Content Include="wwwroot_build\tools\7zsd_All.sfx" />
@@ -190,9 +187,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>33325</DevelopmentServerPort>
+          <DevelopmentServerPort>28881</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:33325/</IISUrl>
+          <IISUrl>http://localhost:28881/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
